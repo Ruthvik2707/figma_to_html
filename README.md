@@ -141,9 +141,9 @@ CSS stylesheet containing:
 - Background image URLs
 
 ### what Failed
--The position of html overlapps and hard to position these
--assets are not extracted properly
--need to place asstes and positions based on the figma
+- The position of html overlapps and hard to position these
+- assets are not extracted properly
+- need to place asstes and positions based on the figma
 
 ## Author
 
