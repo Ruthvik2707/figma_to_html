@@ -140,16 +140,10 @@ CSS stylesheet containing:
 - Typography settings
 - Background image URLs
 
-## Notes
-
-- Class names are generated from Figma node names with special characters sanitized
-- Numeric class names are prefixed with 'n' for CSS validity
-- Absolute positioning is used to match Figma's canvas layout
-- Background images are embedded as URLs from Figma's asset servers
-
-## License
-
-MIT
+### what Failed
+The position of html overlapps and hard to position these
+assets are not extracted properly
+need to place asstes and positions based on the figma
 
 ## Author
 
