@@ -1,4 +1,4 @@
-// generateHTML.js
+
 import fs from 'fs';
 
 const design = JSON.parse(fs.readFileSync('design.json', 'utf-8'));
@@ -13,7 +13,6 @@ function traverse(node) {
   let html = `<${tag} class="${className}">\n`;
   let css = `.${className} {\n`;
 
-  // existing code…
   if (node.styles.position) {
     css += `  position: absolute;\n`;
     css += `  left: ${node.styles.position.x}px;\n`;
@@ -29,14 +28,12 @@ function traverse(node) {
     css += `  background-color: ${node.styles.backgroundColor};\n`;
   }
 
-  // ⭐ ADDED: apply image background
   if (node.assetUrl) {
     css += `  background-image: url("${node.assetUrl}");\n`;
     css += `  background-size: cover;\n`;
     css += `  background-repeat: no-repeat;\n`;
   }
 
-  // existing borders, text styles…
   if (node.styles.color) css += `  color: ${node.styles.color};\n`;
   if (node.styles.fontSize) css += `  font-size: ${node.styles.fontSize}px;\n`;
   if (node.styles.fontFamily) css += `  font-family: ${node.styles.fontFamily};\n`;
