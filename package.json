@@ -1,0 +1,15 @@
+
+{
+  "name": "figma-to-html",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "fetch": "node ./index.js",
+    "render": "node ./renderer.js",
+    "start": "npm run fetch && npm run render"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2"
+  }
+}
